@@ -3,6 +3,7 @@ import Pagination from '../Pagination';
 import data from './data/mock-data.json';
 import './style.scss';
 
+// Data displayed
 let PageSize = 10;
 
 export default function App() {
@@ -27,7 +28,7 @@ export default function App() {
           </tr>
         </thead>
         <tbody>
-          {currentTableData.map(item => {
+          {currentTableData.map((item) => {
             return (
               <tr>
                 <td>{item.id}</td>
@@ -45,7 +46,7 @@ export default function App() {
         currentPage={currentPage}
         totalCount={data.length}
         pageSize={PageSize}
-        onPageChange={page => setCurrentPage(page)}
+        onPageChange={(page) => setCurrentPage(page)}
       />
     </>
   );
