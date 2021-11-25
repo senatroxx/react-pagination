@@ -1,0 +1,35 @@
+$background-secondary-color: #1f2937;
+
+h1,
+p {
+  font-family: Lato;
+}
+
+body {
+  background-color: $background-secondary-color;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+  color: #fafafa;
+}
+
+thead tr th {
+  font-weight: 500;
+  text-align: left;
+  background-color: #fafafa;
+}
+
+th,
+td {
+  padding: 8px;
+  overflow-wrap: break-word;
+}
+
+.pagination-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
